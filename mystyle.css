@@ -1,0 +1,176 @@
+
+
+div.background
+	{
+
+  width:800px;
+  height:150px;
+  background:url(images/banner.jpg) repeat;
+ 	}
+	
+div.transbox.color
+  	{
+ 
+  width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff; 
+  border:1px solid black;
+  /* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+  	}
+
+
+ul.a
+	{
+
+float:left;
+width:100%;
+padding:0;
+margin:0;
+list-style-type:none;
+	}
+a.a
+	{
+float:left;
+width:6em;
+text-decoration:none;
+color:white;
+background-color:green;
+padding:0.2em 0.6em;
+border-right:5px solid white;
+	}
+
+body 
+	{
+		
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 0px solid black;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+	padding: 20px 10px 0px;
+	}
+
+.textfield {
+	font-size: 11px;
+	color: #333333;
+	background: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	padding-left: 1px;
+}
+
+h1 { color: 	#98FB98; } 
+h1. {color:#03C}
+
+h1.over {
+	color: #99CC00;
+	margin: 0px 0px 5px;
+	padding: 0px 0px 3px;
+	font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+	border-bottom: 1px dashed #E6E8ED;
+}
+a {
+	color: #2D3954;
+	font-size: 11px;
+}
+a:hover {
+	color: #99CC00;
+}
+.err {
+	color: #FF9900;
+}
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+p.ex {color:rgb(255,0,0)}
+lable.ex{color:rgb(255,0,0)}
+
+#container
+{
+	margin: 0 auto;
+	width: 800px;
+	background: #fff;
+}
+
+#header
+{
+	background: #ccc url(images/banner.jpg) repeat-y 100% 0;;
+	padding: 50px;
+	
+}
+
+#header h1 { margin: 0; }
+
+#navigation
+{
+	float: left;
+	width: 800px;
+	background: #333;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+}
+
+#navigation li a:hover { background: #383; }
+
+#content-container
+{
+	float: left;
+
+	background: #fff;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+	display: inline;
+}
+
+#content h2 { margin: 0; }
+
+#aside
+{
+	float: right;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+#aside h3 { margin: 0; }
+
+#footer
+{
+	clear: left;
+	background: #ccc;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}

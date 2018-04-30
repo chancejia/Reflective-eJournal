@@ -1,0 +1,157 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Nov 22, 2010 at 01:34 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `ejournal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `article_id` int(11) NOT NULL DEFAULT '0',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `page` varchar(255) NOT NULL DEFAULT '',
+  `username` varchar(255) NOT NULL DEFAULT 'Guest',
+  `subject` varchar(255) NOT NULL DEFAULT '',
+  `contact` varchar(255) NOT NULL DEFAULT '',
+  `comment` text NOT NULL,
+  `ip` varchar(15) NOT NULL DEFAULT '0',
+  `date` varchar(255) NOT NULL DEFAULT '',
+  `time` varchar(11) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`article_id`, `id`, `page`, `username`, `subject`, `contact`, `comment`, `ip`, `date`, `time`) VALUES
+(23, 51, '/eJournal/modules/site/journal_content.php?id=23', 'Mou', 'nihao', 'http://redjpx', 'sdsdf', '127.0.0.1', 'November 20, 2010.', '1290263950'),
+(23, 52, '/eJournal/modules/site/journal_content.php?id=23', 'bluekey', 'thank you!', 'mailto:redjpx@gmail.com', 'bucuo!~\r\n\r\nmethods, as we\r\nneed to store and then clear the identity data for \r\n', '127.0.0.1', 'November 20, 2010.', '1290264010'),
+(23, 53, '/eJournal/modules/site/journal_content.php?id=23', 'thrth', 'rthr', 'http://rthrth', 'rht', '127.0.0.1', 'November 20, 2010.', '1290264105'),
+(23, 54, '/eJournal/modules/site/journal_content.php?id=23', 'hrthr', 'rhrt', 'http://rthrt', 'rthrthhtr', '127.0.0.1', 'November 20, 2010.', '1290264122'),
+(21, 55, '/eJournal/modules/site/journal_content.php?id=21', 'redjpx', 'dsfs', 'mailto:redjpx@gmail.com', 'dfsdf', '127.0.0.1', 'November 20, 2010.', '1290264196'),
+(21, 56, '/eJournal/modules/site/journal_content.php?id=21', 'WW', 'about the Convocation Ceremonies Day in UKM in 2011', 'http://sdfss', 'dsfdf\r\njhkhl\r\nkl;kl;', '127.0.0.1', 'November 20, 2010.', '1290264223'),
+(21, 57, '/eJournal/modules/site/journal_content.php?id=21', 'erte', 'ertr', 'http://ert', 'et\r\n1\r\n2\r\n3\r\n2\r\n5', '127.0.0.1', 'November 20, 2010.', '1290264465'),
+(22, 58, '/eJournal/modules/site/journal_content.php?id=22', 'rthrth', 'rth', 'http://rthrth', 'rhtr', '127.0.0.1', 'November 20, 2010.', '1290265333'),
+(23, 59, '/eJournal/modules/site/journal_content.php?id=23', 'gh', 'fgh', 'http://fgh', 'fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', '127.0.0.1', 'November 20, 2010.', '1290265823'),
+(23, 60, '/eJournal/modules/site/journal_content.php?id=23', 'ertert', 'hrth', 'http://rtert', 'rthrthrthttttttttttttttttttttttttttttttttttttttttttttttthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', '127.0.0.1', 'November 20, 2010.', '1290265836'),
+(23, 61, '/eJournal/modules/site/journal_content.php?id=23', 'jkhk', 'hjkh', 'http://hjkhjk', 'dfggggggg\r\nkl5\r\n46\r\n446\r\n\r\n646\r\n4', '127.0.0.1', 'November 20, 2010.', '1290265882'),
+(23, 62, '/eJournal/modules/site/journal_content.php?id=23', 'fghfgh', 'fghgh', 'http://fgh', 'gfhfg', '127.0.0.1', 'November 20, 2010.', '1290266798'),
+(33, 63, '/eJournal/modules/site/journal_content.php?id=33', 'mou', 'relpy', 'mailto:moucc160@yahoo.com.cn', 'fuck u', '127.0.0.1', 'November 20, 2010.', '1290282573'),
+(0, 64, '/ejournal/modules/journals/journal_content.php?logid=27&userid=4', 'Bluekey Jia', 'hello!~', 'redjpx@gmail.com', 'it''s really god!\r\nhaha', '127.0.0.1', 'November 21, 2010.', '1290297919'),
+(0, 65, '/ejournal/modules/journals/journal_content.php?logid=24&userid=16', 'Bluekey Jia', 'haha', 'redjpx@gmail.com', 'zhongyu cheng gong la!~\r\n', '127.0.0.1', 'November 21, 2010.', '1290298651'),
+(0, 66, '/ejournal/modules/journals/journal_content.php?logid=26&userid=4', 'Bluekey Jia', 'haha', 'redjpx@gmail.com', '<div style="text-align: justify;">sdsfd</div><div style="text-align: justify;">dsfs</div><div style="text-align: justify;"><br></div><div style="text-align: justify;">sdf</div>', '127.0.0.1', 'November 21, 2010.', '1290299275'),
+(0, 67, '/ejournal/modules/journals/journal_content.php?logid=26&userid=4', 'Bluekey Jia', 'sdfs', 'redjpx@gmail.com', '<font class="Apple-style-span" size="3" color="#990000">sdfsdf</font><h5><font class="Apple-style-span" size="3" color="#990000">sdfd</font></h5>', '127.0.0.1', 'November 21, 2010.', '1290299443'),
+(0, 68, '/ejournal/modules/journals/journal_content.php?logid=8&userid=4', 'Bluekey Jia', 'dfgfd', 'redjpx@gmail.com', '<img src="http://image-7.verycd.com/b88f986b73b9663329cc27aa35ef8620464358(120x120)/thumb.jpg" alt="image you like" align="none"><br><div>haha~</div>', '127.0.0.1', 'November 21, 2010.', '1290300366');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `journals`
+--
+
+CREATE TABLE IF NOT EXISTS `journals` (
+  `log_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` mediumint(8) unsigned DEFAULT NULL,
+  `author` varchar(30) DEFAULT NULL,
+  `matrics` varchar(10) DEFAULT NULL,
+  `title` varchar(80) DEFAULT NULL,
+  `language` varchar(5) DEFAULT NULL,
+  `tag` varchar(80) DEFAULT NULL,
+  `content` longtext,
+  `visiable` int(3) DEFAULT NULL,
+  `add_time` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`log_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
+
+--
+-- Dumping data for table `journals`
+--
+
+INSERT INTO `journals` (`log_id`, `user_id`, `author`, `matrics`, `title`, `language`, `tag`, `content`, `visiable`, `add_time`) VALUES
+(20, 4, 'Bluekey Jia', 'G7777', 'Pengxiang Jia', 'Java', 'sa', '<div>Zend_Db component</div><div>getId(): Retrieves the database ID of a saved record.</div><div><br></div><div><br></div><div>DatabaseObject can be used:</div><div>All callbacks (except for postLoad()) must return&nbsp;</div><div><br></div><div>either true or false.It is</div><div>important to remember to define the return value if&nbsp;</div><div><br></div><div>you implement any of these functions.</div>', 3, '11/19/2010 07:30:15 '),
+(19, 15, 'PENGXIANG JIA', 'B76735', 'Operators', 'C++', 's', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: 12px; "><h3 style="font-size: 18px; ">Relational and equality operators ( ==, !=, &gt;, &lt;, &gt;=, &lt;= )</h3><div><br></div></span>', 3, '11/18/2010 02:57:38 '),
+(18, 15, 'PENGXIANG JIA', 'B76735', 'Variables. Data Types.', 'C++', 'dsdf', '<span class="Apple-style-span" style="font-size: 12px; -webkit-border-vertical-spacing: 0px; -webkit-border-horizontal-spacing: 0px; font-family: verdana, arial, helvetica, sans-serif; color: rgb(0, 0, 0); ">In order to use a variable in C++, we must first declare it specifying which data type we want it to be. The syntax to declare a new variable is to write the specifier of the desired data type (like int, bool, float...) followed by a valid variable identifier. For example:<br><br><div class="auto" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "><table class="snippet" style="font-family: verdana, arial, helvetica, sans-serif; font-size: 12px; color: black; "><tbody><tr><td class="rownum" style="color: rgb(160, 160, 160); text-align: right; vertical-align: top; min-width: 20px; "><tt>1<br>2<br></tt></td><td class="source" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(239, 239, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 208); border-right-color: rgb(192, 192, 208); border-bottom-color: rgb(192, 192, 208); border-left-color: rgb(192, 192, 208); vertical-align: top; background-position: initial initial; background-repeat: initial initial; "><pre style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "><code><var style="font-style: normal; color: rgb(0, 0, 176); ">int</var> a;\r\n<var style="font-style: normal; color: rgb(0, 0, 176); ">float</var> mynumber;</code></pre></td></tr></tbody></table></div><br><br>These are two valid declarations of variables. The first one declares a variable of type&nbsp;<var>int</var>&nbsp;with the identifier&nbsp;<var>a</var>. The second one declares a variable of type&nbsp;<var>float</var>&nbsp;with the identifier&nbsp;<var>mynumber</var>. Once declared, the variables&nbsp;<var>a</var>&nbsp;and&nbsp;<var>mynumber</var>&nbsp;can be used within the rest of their scope in the program.<br></span>', 3, '11/18/2010 02:56:05 '),
+(17, 15, 'PENGXIANG JIA', 'B76735', 'wo lai la !', 'Java', 'sda', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; "><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">s always possible that your SQL SELECT statement query may result into thausand of records. But its is not good idea to display all the results on one page. So we can divide this result into many pages as per requirement.</p><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">Paging means showing your query result in multiple pages instead of just put them all in one long page.</p><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">&lt;code&gt;</p><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">MySQL helps to generate paging by using&nbsp;<b>LIMIT</b>&nbsp;clause which will take two arguments. First argument as OFFSET and second argument how many records should be returned from the database.</p><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">Below is a simple e</p><p style="text-align: justify; font-family: verdana, helvetica, arial, sans-serif; ">&lt;/code&gt;</p></span>', 2, '11/18/2010 02:52:44 '),
+(16, 4, 'Bluekey Jia', 'G7777', 'ertet', 'Java', 'rt', 'erteterte', 3, '11/18/2010 01:58:48 '),
+(15, 4, 'Bluekey Jia', '', 'sfsdf', 'Java', 'sdgsd', 'sdgsdg<br>', 2, '11/17/2010 05:54:32 '),
+(14, 4, 'Bluekey Jia', NULL, '&#22823;&#39340;&#36938;&#35352;', 'Java', 'da ma', 'wo ai da ma!', 2, '11/17/2010 12:43:44 '),
+(13, 4, 'Bluekey Jia', NULL, 'tert', 'Java', 'et', 'etet', NULL, '11/17/2010 12:39:40 '),
+(11, 4, 'Bluekey Jia', NULL, 'rgerter', 'Java', 'etr', '', NULL, '11/17/2010 12:34:58 '),
+(10, 13, 'Berkeley Jia', NULL, 'hello word!~', 'Java', 'first one', '<font class="Apple-style-span" face="impact" color="#3300FF" size="6">hello word!~&nbsp;</font><br>', NULL, '11/15/2010 10:40:27 '),
+(9, 4, 'Bluekey Jia', NULL, 'Pointers', 'C++', 'pointers', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: 12px; ">The memory of your computer can be imagined as a succession of memory cells, each one of the minimal size that computers manage (one byte). These single-byte memory cells are numbered in a consecutive way, so as, within any block of memory, every cell has the same number as the previous one plus one.<br><br>This way, each cell can be easily located in the memory because it has a unique address and all the memory cells follow a successive pattern. For example, if we are looking for cell 1776 we know that it is going to be right between cells 1775 and 1777, exactly one thousand cells after 776 and exactly one thousand cells before cell 2776.<br></span>', NULL, '11/15/2010 10:25:25 '),
+(8, 4, 'Bluekey Jia', NULL, 'Arrays', 'C++', 'arrays', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: 12px; ">An array is a series of elements of the same type placed in contiguous memory locations that can be individually referenced by adding an index to a unique identifier.<br><br>That means that, for example, we can store 5 values of type&nbsp;<tt>int</tt>&nbsp;in an array without having to declare 5 different variables, each one with a different identifier. Instead of that, using an array we can store 5 different values of the same type,&nbsp;<tt>int</tt>&nbsp;for example, with a unique identifier.<br><br>For example, an array to contain 5 integer values of type&nbsp;<tt>int</tt>&nbsp;called&nbsp;<tt>billy</tt>&nbsp;could be represented like this:<br><br><img src="http://www.cplusplus.com/doc/tutorial/arrays/arrays1.gif" alt="" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; "><br><br>where each blank panel represents an element of the array, that in this case are integer values of type&nbsp;<tt>int</tt>. These elements are numbered from&nbsp;<tt>0</tt>&nbsp;to&nbsp;<tt>4</tt>&nbsp;since in arrays the first index is always&nbsp;<tt>0</tt>, independently of its length.<br><br>Like a regular variable, an array must be declared before it is used. A typical declaration for an array in C++ is</span><br>', NULL, ''),
+(7, 4, 'Bluekey Jia', NULL, 'Basic Input/Output', 'C++', 'Input/Output', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: 12px; ">Until now, the example programs of previous sections provided very little interaction with the user, if any at all. Using the standard input and output library, we will be able to interact with the user by printing messages on the screen and getting the user''s input from the keyboard.<br><br>C++ uses a convenient abstraction called&nbsp;<i>streams</i>&nbsp;to perform input and output operations in sequential media such as the screen or the keyboard. A stream is an object where a program can either insert or extract characters to/from it. We do not really need to care about many specifications about the physical media associated with the stream - we only need to know it will accept or provide characters sequentially.<br><br>The standard C++ library includes the header file&nbsp;<tt>iostream</tt>, where the standard input and output stream objects are declared.</span><br>', NULL, '11/15/2010 10:19:50 '),
+(6, 4, 'Bluekey Jia', NULL, 'Java data types', 'Java', 'data types', '<span class="Apple-style-span" style="color: rgb(51, 51, 51); font-family: arial, verdana; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: 13px; line-height: 19px; ">There are both<b style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">&nbsp;</b><em style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "><b style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">integer</b></em><b style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">&nbsp;</b>and&nbsp;<b style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "><em style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">floating point</em>&nbsp;</b>primitive types. Integer types have no fractional part; floating point types have a fractional part. On paper, integers have no decimal point, and floating point types do. But in main memory, there are no decimal points: even floating point values are represented with bit patterns. There is a fundamental difference between the method used to represent integers and the method used to represent floating point numbers.<b style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">&nbsp;</b></span><br>', NULL, '0000-00-00 00:00:00'),
+(5, 4, 'Bluekey Jia', NULL, 'Do You Even Need A Salutation?', 'Java', 'Salutation', '<span class="Apple-style-span" style="color: rgb(0, 0, 0); font-family: verdana, arial, sans-serif; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-size: medium; ">Given that email is relatively informal, frequently (in the United States) there isn''t a problem with dispensing with names and titles altogether, especially if you are in a higher status position than your correspondent:<pre>	Hello - I saw your web site and wanted to mention that \r\n	I invented the thromblemeister on Feb 29, 2403, *not* \r\n	on Feb 28, 2402.\r\n</pre>I usually use a simple "Hi" for people that I already know:<pre>	Hi - Are you interested in getting together for \r\n	sushi next week?  I can bring all my wedding pictures \r\n	and bore you to death. ;-)\r\n</pre>"Good Morning" and "Good Afternoon" don''t make a lot of sense with email, as the sun may have moved significantly by the time your correspondent gets around to it. "Good Day" sounds stilted to American ears (although it is common in other parts of the former British Empire). You may want to avoid "Greetings" in the United States: it reminds many people of the draft notices young men got during the Vietnam War.<p style="font-family: verdana, arial, sans-serif; font-size: 1em; margin-top: 1em; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">Again, you must be careful about cultural differences. The East Coast of the United States is more formal than the West Coast (where I live). Germans are even more formal; they can work side-by-side for years and never get around to a first-name basis. Starting a message to Germany with&nbsp;<tt>Dear Hans</tt>&nbsp;might be a bad idea.</p></span>', NULL, '0000-00-00 00:00:00'),
+(4, 4, 'Bluekey Jia', NULL, 'learning toturials', 'Java', 'HTML5', '<div>&lt;form action="demo_form.asp" method="get"&gt;</div><div>Date and time: &lt;input type="datetime" name="user_date" /&gt;</div><div>&lt;input type="submit" /&gt;</div><div>&lt;/form&gt;</div>', NULL, '0000-00-00 00:00:00'),
+(3, 4, 'Bluekey Jia', NULL, 'about textarea', 'Java', 'textarea', '<div>&lt;p&gt;</div><div>This example cannot be edited because our editor uses a textarea for input, and your browser does not allow a textarea inside a textarea.</div><div>&lt;/p&gt;</div><div><br></div><div>&lt;textarea rows="2" cols="20"&gt;</div><div>At W3Schools you will find all the Web-building tutorials you need, from basic HTML to advanced XML, SQL, ASP, and PHP.&nbsp;</div><div><br></div>', NULL, '0000-00-00 00:00:00'),
+(2, 4, 'Bluekey Jia', NULL, 'hello word!~', 'Java', 'second poster', '<br>', NULL, '0000-00-00 00:00:00'),
+(1, 4, 'Bluekey Jia', NULL, 'hello word!~', 'C++', 'first poster', '<h2><font class="Apple-style-span" color="#FFCC00">Hello Word!~</font></h2>', NULL, '0000-00-00 00:00:00'),
+(21, 4, 'Bluekey Jia', 'G7777', 'control permissions', 'C++', 'sasd', '<div>To control permissions, we will treat each controller&nbsp;</div><div><br></div><div>as a resource, and treat the action</div><div>handlers in these controllers as the permissions&nbsp;</div><div><br></div><div>associated with the resource.</div><div>For instance,</div><div>later in this chapter we will create the&nbsp;</div><div><br></div><div>AccountController.php file, which is used to control</div><div>everything relating to user accounts (such as logging&nbsp;</div><div><br></div><div>in, logging out, fetching passwords, and</div><div>updating user details). The AccountController&nbsp;</div><div><br></div><div>controller will be the resource for Zend_Acl,</div><div>while the privileges associated with this resource&nbsp;</div><div><br></div><div>are the actions just mentioned (login, logout,</div><div>fetch password, update details).</div>', 1, '11/19/2010 07:34:49 '),
+(22, 4, 'Bluekey Jia', 'G7777', 'Zend_Acl', 'C++', 'Zend_Acl', '<div><ol><li>1. Instantiate the Zend_Acl class (let’s call this&nbsp;<br></li><li><br></li><li>object $acl).<br></li><li>2. Add one or more roles to $acl using the addRole()&nbsp;<br></li><li><br></li><li>method.<br></li><li>3. Add resources to $acl using the add() method.<br></li><li>4. Add the full list of privileges for each role&nbsp;<br></li><li><br></li><li>(that is, use allow() or deny() to indicate<br></li><li>which resources roles have access to).<br></li><li>5. Use the isAllowed() method on $acl to determine&nbsp;<br></li><li><br></li><li>whether a particular role has access<br></li><li>to a particular resource/privilege combination.<br></li><li>6. Repeat step 5 as often as necessary while the&nbsp;<br></li><li><br></li><li>script executes.<br></li></ol></div>', 2, '11/19/2010 07:43:13 '),
+(23, 4, 'Bluekey Jia', 'G7777', 'Zend_Acl First', 'Java', '', '<div>Zend_Acl First, it will be</div><div>used when we check user permissions with Zend_Acl. It&nbsp;</div><div><br></div><div>will also be used in application login and logout&nbsp;</div><div><br></div><div>methods, as we</div><div>need to store and then clear the identity data for&nbsp;</div><div><br></div><div>each of these methods.</div>', 2, '11/19/2010 07:44:25 '),
+(24, 16, 'PENGXIANG Jia', 'G76735', 'Java', 'Java', 'java', '<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span class="Apple-style-span" style="font-size: 13px; line-height: 19px;"><b>Java</b><span class="Apple-converted-space">&nbsp;</span>is a<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Programming_language" title="Programming language" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">programming language</a><span class="Apple-converted-space">&nbsp;</span>originally developed by<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/James_Gosling" title="James Gosling" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">James Gosling</a><span class="Apple-converted-space">&nbsp;</span>at<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">Sun Microsystems</a><span class="Apple-converted-space">&nbsp;</span>(which is now a subsidiary of<a href="http://en.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">Oracle Corporation</a>) and released in 1995 as a core component of Sun Microsystems''<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Java_%28software_platform%29" title="Java (software platform)" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">Java platform</a>. The language derives much of its<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Syntax_%28programming_languages%29" title="Syntax (programming languages)" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">syntax</a>from<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/C_%28programming_language%29" title="C (programming language)" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">C</a><span class="Apple-converted-space">&nbsp;</span>and<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/C%2B%2B" title="C++" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">C++</a><span class="Apple-converted-space">&nbsp;</span>but has a simpler<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Object_model" title="Object model" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">object model</a>and fewer<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">low-level</a><span class="Apple-converted-space">&nbsp;</span>facilities. Java applications are typically<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Compiler" title="Compiler" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">compiled</a><span class="Apple-converted-space">&nbsp;</span>to<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Java_bytecode" title="Java bytecode" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">bytecode</a><span class="Apple-converted-space">&nbsp;</span>(<a href="http://en.wikipedia.org/wiki/Class_%28file_format%29" title="Class (file format)" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">class file</a>) that can run on any<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Java_Virtual_Machine" title="Java Virtual Machine" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">Java Virtual Machine</a><span class="Apple-converted-space">&nbsp;</span>(JVM) regardless of<span class="Apple-converted-space">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Computer_architecture" title="Computer architecture" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none;">computer architecture</a>. Java is a general-purpose, concurrent, class-based, object-oriented language that is specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere".</span></span>', 2, '11/20/2010 08:55:55 '),
+(25, 4, 'Bluekey Jia', 'G7777', 'egferge', 'Java', 'ger', 'ergerger', 1, '11/20/2010 11:12:30 '),
+(28, 4, 'Bluekey Jia', 'G7777', 'fytfhvn', 'Java', 'first one', 'gcghcgch<div>vhgg</div><div>chgcg</div>', 1, '11/21/2010 03:19:06 '),
+(32, 4, 'Bluekey Jia', 'G7777', 'ghkjghkg', 'C++', 'asd', 'fgjfgjg<div><br></div><div>check it out @ <a href="http://www.renren.com" title="&#20154;&#20154;" target="_blank">here</a>!</div><div><br></div><div>jdsfsdjf</div>', 2, '11/21/2010 03:29:22 '),
+(33, 14, 'Chengcheng Mou', 'g76450', 'yr sister', 'C++', '', 'yr really really younger sister', 3, '11/21/2010 03:48:44 '),
+(34, 4, 'Bluekey Jia', 'G7777', 'efef', 'Java', 'rger', 'ergerger<br>', 1, '11/21/2010 04:19:55 ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `matric` varchar(10) NOT NULL,
+  `password` char(32) DEFAULT NULL,
+  `fname` varchar(20) DEFAULT NULL,
+  `lname` varchar(20) DEFAULT NULL,
+  `semester` int(2) DEFAULT NULL,
+  `session` varchar(10) DEFAULT NULL,
+  `gp` varchar(5) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `website` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `matric`, `password`, `fname`, `lname`, `semester`, `session`, `gp`, `email`, `website`) VALUES
+(16, 'G76735', 'e10adc3949ba59abbe56e057f20f883e', 'PENGXIANG', 'Jia', 2, '2011/2012', 'Java', 'redjpx@yahoo.com.cn', 'http://php.net/manual/en/function.session-is-registered.php'),
+(3, 'G89898', '4aa824220d69d1632fe21770ea46f058', 'Jia', 'Pengxiang', NULL, NULL, '0', 'redjpx@gmail.com', 'www.renren.com'),
+(4, 'G7777', '81dc9bdb52d04dc20036dbd8313ed055', 'Bluekey', 'Jia', 1, '2011/2012', 'Java', 'redjpx@gmail.com', 'http://www.renren.com'),
+(5, 'G7888', '202cb962ac59075b964b07152d234b70', 'jia', 'sdjs', NULL, NULL, NULL, 'redjpx@gmail.com', 'fdfdf'),
+(6, 'A76735', 'ea2f089a8db8c356fff1a85700066150', 'Bluekey', 'Jia', NULL, NULL, NULL, 'redjpx@gmail.com', 'www.renren.com'),
+(7, 'G9857', '202cb962ac59075b964b07152d234b70', 'jia', 'wis', NULL, NULL, NULL, 'loveac0yc@hotmail.com', 'sdsd'),
+(9, 'g77878', '545da405b459949fc71d832a29b1b273', 'jia', 'red', NULL, NULL, '1', 'loveac0yc@hotmail.com', 'sdfd'),
+(10, 'G6', '202cb962ac59075b964b07152d234b70', 'Berkeley', 'Jia', NULL, NULL, 'C++', 'loveac0yc@hotmail.com', 'www.renren.com/bluekey'),
+(11, 'A12345', 'e10adc3949ba59abbe56e057f20f883e', 'simpson', 'wisden', NULL, NULL, 'Java', '1@2.com', 'www.airasia.com'),
+(13, 'G8888', 'e10adc3949ba59abbe56e057f20f883e', 'Berkeley', 'Jia', 2, '2010/2011', 'Java', 'redjpx@gmail.com', 'http://www.facebook.com/profile.php?id=100000121496508'),
+(14, 'g76450', '3fcba2742e2a8542904e82c6a205bf15', 'Chengcheng', 'Mou', 3, '2010/2011', 'C++', 'moucc160@yahoo.com.cn', ''),
+(15, 'B76735', 'e10adc3949ba59abbe56e057f20f883e', 'PENGXIANG', 'JIA', 1, '2011/2012', 'Java', 'redjpx@gmail.com', 'www.renren.com/bluekey'),
+(17, 'A123456', 'e10adc3949ba59abbe56e057f20f883e', 'Aleif', 'Fadhliansyah', 2, '2011/2012', 'Java', 'gh_anahita18@yahoo.com', 'http://www.facebook.com/aliefadhli');
